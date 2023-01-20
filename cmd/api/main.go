@@ -16,9 +16,12 @@ import (
 	"github.com/mrtj458/greenlight/internal/data"
 	"github.com/mrtj458/greenlight/internal/jsonlog"
 	"github.com/mrtj458/greenlight/internal/mailer"
+	"github.com/mrtj458/greenlight/internal/vcs"
 )
 
-const version = "1.0.0"
+var (
+	version = vcs.Version()
+)
 
 type config struct {
 	port int
