@@ -1,0 +1,8 @@
+{
+	email example@example.com
+}
+
+greenlight.mrtj458.net {
+	respond /debug/* "Not Permitted" 403
+	reverse_proxy localhost:4000
+}
